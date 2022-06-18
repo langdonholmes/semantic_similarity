@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-echo "# Repository Name" >> README.md
+echo "# Repository Name" >| README.md
 git init .
 echo "*-checkpoint.*" >> .gitignore
 git add --all
