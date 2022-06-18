@@ -1,16 +1,15 @@
 #!/usr/bin/env bash 
-echo "# REPO TITLE" >> README.md
+echo "# Repository Name" >> README.md
 git init .
-touch .gitignore
+echo "*-checkpoint.*" >> .gitignore
 git add --all
 git commit -m "init"
 
 # create repo on Github Website
-# run script with url as first positional argument
-# git remote add origin $1
+# run script with ssh address as first positional argument
+git remote add origin $1
 
-# git branch main
-git push origin --all
-git push origin --tags
+git branch -M main
+git push -u origin main
 
 echo "Done."    
