@@ -7,7 +7,7 @@ git commit -m "init"
 
 # create repo on Github Website
 # run script with url as first positional argument
-git remote add origin $1
+# git remote add origin $1
 
 # git branch main
 git push origin --all
