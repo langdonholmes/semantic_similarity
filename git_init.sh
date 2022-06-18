@@ -9,7 +9,7 @@ git commit -m "init"
 # run script with url as first positional argument
 git remote add origin $1
 
-git branch main
+# git branch main
 git push origin --all
 git push origin --tags
 
